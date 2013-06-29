@@ -20,5 +20,8 @@ available through the standard website:
 <li>Infinite Scrolling</li>
 <li>Ability to quickly share articles with your friends</li>
 </ul>
+
 I hope you give it a shot, feel free to email me any enhancements or bugs 
 you run into and I will see what I can do.
+
+<img src="{{ site.url }}/images/2013-06-29-spn.png" width="300px" />
