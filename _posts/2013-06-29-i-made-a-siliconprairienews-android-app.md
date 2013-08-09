@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: I made a SiliconPrairieNews.com Android App
+author: John Moses
 ---
 ### SPN Today
 I am addicted to reading about technology and learning what technologies 

@@ -1,11 +1,16 @@
 ---
-layout: posts
+layout: index
 ---
 
-<ul>
 {% for post in site.posts %}
-<li>
-  <a href="{{ post.url }}">{{ post.title }}</a>
-</li>
+
+<article>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <h6>Written by <a href="http://jmoses.co">{{ post.author }}</a> on {{ post.date }}</h6>
+
+  {{ post.content }}
+
+</article>
+<hr />
+
 {% endfor %}
-</ul>

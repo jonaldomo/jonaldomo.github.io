@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: My RTanque bot
+author: John Moses
 ---
 ### RTanque
 [KCRuby](http://www.meetup.com/kcruby/) is running a RTanque contest right now.  I heard about this when [Wes Garrison](https://twitter.com/wesgarrison/) gave a presentation on Ruby at Cerner's internal tech conference and gave a plug to KCRuby.

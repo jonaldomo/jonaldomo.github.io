@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: If you are reading this, I set up Jekyll right
+author: John Moses
 ---
 ### Yay
 I am glad I talked myself into setting up Jekyll.  With Jekyll I am able to write a blog 
