@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: index
 title: I made a SiliconPrairieNews.com Android App
 author: John Moses
 ---
