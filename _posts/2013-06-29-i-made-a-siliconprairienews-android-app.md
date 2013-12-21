@@ -9,7 +9,7 @@ others are having success at.  As of this writing HackerNews is where it
 is at, but they are focused on the coasts.  A few years ago if I wanted to 
 read about Kansas City Startups, I would have to wade through the Kansas 
 City Star or the Kansas City Business Journal.  Today that is not so much 
-a problem with Silicon Prairie News (SPN) [1]. What is a problem is that 
+a problem with Silicon Prairie News (SPN) \[1\]. What is a problem is that 
 there are no Android or IOS applications specific to SPN.
 
 So I am going to go ahead and change that with SPN Today, an Android application.  
