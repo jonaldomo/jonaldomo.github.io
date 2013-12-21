@@ -1,2 +1,3 @@
 future: false
 timezone: America/Chicago
+pygments: true
