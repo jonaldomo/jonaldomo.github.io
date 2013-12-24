@@ -4,20 +4,20 @@ title: Is Ruby Dying?
 author: John Moses
 ---
 
+### Is Ruby Dying?
+
 I have been working with nodejs alot lately and have been 
 discussing with coworkers if nodejs is taking steam away from 
-ruby at all.  I think it is an important conversation as when 
-starting a new project, one thing to look at is the ecosystem 
-around the language.
+ruby at all.  I think the popularity of the language is an 
+important talking point when selecting a language and framework 
+for a new project.
 
-It is the first day of my nine day Christmas break and I thought 
-it would be cool to graph some statistics about rubygems to see 
-if I could come to an answer.  The front page of rubygems only 
+I think a graph on the release date of gems over time could help 
+determine an answer. The front page of rubygems only 
 shows data on the most popular, but I am really interested in 
-seeing recent activity.  Specifically, I would like to see a line 
-graph of the release date of the latest version of each gem.  My 
-theory is that if developers' contributions to different gems 
-is slowing down, then so is the popularity of the language.
+seeing recent activity. My theory is that if developers' 
+contributions to different gems is slowing down, then so is 
+the popularity of the language.
 
 ### Getting the data
 
