@@ -176,4 +176,4 @@ are still using gems:
 
 What do you guys think?  Is Ruby dying?  Did you once use Ruby and 
 have now started to use something else?  Comments can be found over 
-at [Hackernews](http://news.ycombinator.org/)
+at [Hackernews](https://news.ycombinator.com/item?id=6959355)
