@@ -1,3 +1,5 @@
 future: false
 timezone: America/Chicago
 pygments: true
+name: 'I, Developer'
+url: 'http://jmoses.co'
