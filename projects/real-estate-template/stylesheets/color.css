@@ -1,0 +1,33 @@
+.text-black {
+  color: black;
+}
+.text-twitter-blue {
+  color: #55ACEE;
+}
+.text-google-blue {
+  color: #4d90fe;
+}
+.text-google-red {
+  color: #dd4b39;
+}
+.text-facebook-blue {
+  color: #4c66a4;
+}
+.text-linkedin-blue {
+  color: #4875B4;
+}
+.text-gold {
+  color: gold;
+}
+.text-green {
+  color: green;
+}
+.text-lime-green {
+  color: limegreen;
+}
+.lime-green {
+  background-color: #7cc04b;
+}
+.gray {
+  background-color: gray;
+}

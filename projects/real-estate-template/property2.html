@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Responsive Modern Real Estate</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+    <link href="./libraries/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="./libraries/bxglider/jquery.bxslider.css" rel="stylesheet">
+    <link href="./libraries/jqplot/jquery.jqplot.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./stylesheets/index.css" rel="stylesheet">
+    <link href="./stylesheets/color.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div id="header"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h3>8892 E Benson Pl, San Francisco, CA 94105</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <table class="table table-condensed">
+                <tbody>
+                  <tr><td>Property #</td><td>388737</td></tr>
+                  <tr><td>Asking</td><td>$150,000</td></tr>
+                  <tr><td>Type</td><td>Single Family</td></tr>
+                  <tr><td>Location</td><td>Capital Hill</td></tr>
+                  <tr><td>Bedrooms</td><td>3</td></tr>
+                  <tr><td>Bathrooms</td><td>2</td></tr>
+                  <tr><td>Area</td><td>1500 sqft</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-md-6">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#photos" data-toggle="tab">Photos</a></li>
+                <li><a href="#map" data-toggle="tab">Map</a></li>
+                <li><a href="#streetview" data-toggle="tab">Street View</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="photos">
+                  <ul class="bxslider">
+                    <li><img src="./images/inside1.jpg"/></li>
+                    <li><img src="./images/inside2.jpg"/></li>
+                    <li><img src="./images/inside3.jpg"/></li>
+                  </ul>
+
+                  <div id="bx-pager">
+                    <a data-slide-index="0" href="">
+                      <img src="./images/inside1.jpg" class="max-width-75"/></a>
+                    <a data-slide-index="1" href="">
+                      <img src="./images/inside2.jpg" class="max-width-75"/></a>
+                    <a data-slide-index="2" href="">
+                      <img src="./images/inside3.jpg" class="max-width-75" /></a>
+                  </div>
+                </div>
+                <div class="tab-pane" id="map">
+                </div>
+                <div class="tab-pane" id="streetview">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr>
+              <h4>Description</h4>
+              <p>Picture perfect home on almost 2 acres in neighborhood setting. Open floor plan. Eat-In Kit w/Island. Living Rm w/FP. Spacious Master Suite w/Full Bath w/Jacuzzi. Finished Lower Level adds add'l 500 sqft not incl in sq footage. Pretty yard & landscaping.</p>
+
+              <hr>
+              <h4>Pricing History</h4>
+              <div id="price-history-chart"></div>
+              <table class="table table-condensed" id="price-history-table">
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th>2004</th><td>134,000</td></tr>
+                  <tr><th>2005</th><td>143,000</td></tr>
+                  <tr><th>2008</th><td>152,000</td></tr>
+                  <tr><th>2014</th><td>150,000</td></tr>
+                </tbody>
+              </table>
+
+              <hr>
+              <h4>Tax History</h4>
+              <table class="table table-condensed" id="tax-history-table">
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Property taxes</th>
+                    <th>Change</th>
+                    <th>Tax assessment</th>
+                    <th>Change</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th>2012</th><td>$1,919</td><td>9.9%</td><td>$24,780</td><td>--</td></tr>
+                  <tr><th>2011</th><td>$1,747</td><td>-0.4%</td><td>$24,780</td><td>0.0%</td></tr>
+                  <tr><th>2010</th><td>$1,754</td><td>0.1%</td><td>$24,770</td><td>--</td></tr>
+                </tbody>
+              </table>
+
+              <hr>
+              <h4>Monthly Payment</h4>
+              <div id="monthly-payment"></div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div>
+            <h4>Get more information</h4>
+            <h5>Bob Richardson</h5>
+            <div class="form-group">
+              <input type="text" class="form-control input-sm" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control input-sm" placeholder="Your email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control input-sm" placeholder="Your phone">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="3">I am interested in this property. Please send me more information.
+              </textarea>
+            </div>
+            <div class="form-group">
+              <a class="btn btn-primary" href="#">Contact agent</a>
+            </div>
+          </div>
+
+          <div>
+            <h4>Similar homes for sale</h4>
+            <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object max-width-125" src="./images/house4.jpg">
+            </a>
+            <div class="media-body">
+              <h5 class="media-heading">7272 N 42nd Terrace</h5>
+              <table class="table-condensed">
+                <tbody>
+                  <tr><td>Beds: 2</td><td>Sqft: 1000</td></tr>
+                  <tr><td>Baths: 2</td><td>Lot: 1.4ac</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object max-width-125" src="./images/house5.jpg">
+            </a>
+            <div class="media-body">
+              <h5 class="media-heading">7272 N 42nd Terrace</h5>
+              <table class="table-condensed">
+                <tbody>
+                  <tr><td>Beds: 2</td><td>Sqft: 1000</td></tr>
+                  <tr><td>Baths: 2</td><td>Lot: 1.4ac</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object max-width-125" src="./images/house6.jpg">
+            </a>
+            <div class="media-body">
+              <h5 class="media-heading">7272 N 42nd Terrace</h5>
+              <table class="table-condensed">
+                <tbody>
+                  <tr><td>Beds: 2</td><td>Sqft: 1000</td></tr>
+                  <tr><td>Baths: 2</td><td>Lot: 1.4ac</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /.container -->
+
+    <div class="row" id="footer-row">
+      <div class="col-md-offset-1 col-md-10">
+        <div class="row" id="footer">
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="./libraries/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="./libraries/bxglider/jquery.bxslider.min.js"></script>
+    <script src="./libraries/holder/holder.js"></script>
+    <script src="./libraries/jqplot/jquery.jqplot.min.js"></script>
+    <script src="./libraries/jqplot/plugins/jqplot.dateAxisRenderer.min.js"></script>
+    <script src="./libraries/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
+    <script src="./libraries/ejs/ejs_production.js"></script>
+    <script src="./javascripts/templates.js"></script>
+    <script src="./javascripts/property2.js"></script>
+  </body>
+</html>
