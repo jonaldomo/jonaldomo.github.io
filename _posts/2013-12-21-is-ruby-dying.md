@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: posts
 title: Is Ruby Dying?
 author: John Moses
 ---

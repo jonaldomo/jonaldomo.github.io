@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: posts
 title: Goodbye Bootstrap, Hello Zurb!
 author: John Moses
 ---

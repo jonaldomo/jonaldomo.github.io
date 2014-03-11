@@ -1,43 +1,126 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="John Moses : what it is yo" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../../../stylesheets/stylesheet.css">
-    <title>John Moses</title>
-  </head>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>I, Developer | Blog</title>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.2.3/css/normalize.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.2.3/css/foundation.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="http://jmoses.co/stylesheets/fonts.css">
+  <link rel="stylesheet" href="http://jmoses.co/stylesheets/pygment-github.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.2.3/js/foundation.min.js"></script>
+
+</head>
 <body>
-<!-- HEADER -->
-<div id="header_wrap" class="outer">
-  <header class="inner">
-    <a id="forkme_banner" href="https://github.com/jonaldomo">View on GitHub</a>
-    <h1 id="project_title"><a href="../../../">John Moses</a></h1>
-  </header>
-</div>
-<!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer">
-  <section id="main_content" class="inner">
-  {{content}}
-  </section>
-</div>
-<!-- FOOTER  -->
-<div id="footer_wrap" class="outer">
-  <footer class="inner">
-    <h3>About Me</h3>
-      <p>All day I am a husband and father of two.  Half of the day I am a Software Engineer for Cerner Corporation.  At night I am a tinkerer where I can be found with copious amounts of coffee, basking in the warm glow of my computer.</p>
-    <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+
+  <!-- Nav Bar -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="nav-bar right">
+       <ul class="button-group">
+         <li><a href="http://jmoses.co" class="button">Blog</a></li>
+        </ul>
+      </div>
+      <h1>I, Developer</small></h1>
+      <hr />
+    </div>
+  </div>
+
+  <!-- End Nav -->
+
+
+  <!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+      <h2>{{ page.title }}</h2>
+      <h6>Written by <a href="http://jmoses.co">{{ page.author }}</a> on {{ page.date | date: "%B %-d, %Y"}}</h6>
+      {{content}}
+    </div>
+
+    <!-- End Main Content -->
+
+
+    <!-- Sidebar -->
+
+    <aside class="large-3 columns">
+
+      <!--<h5>Categories</h5>
+      <ul class="side-nav">
+        <li><a href="#">News</a></li>
+        <li><a href="#">Code</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Fun</a></li>
+        <li><a href="#">Weasels</a></li>
+      </ul>-->
+
+      <div class="panel">
+        <h5>My Latest App</h5>
+        <img src="http://jmoses.co/images/spn_half.png"/>
+        <br><br>
+        <p>I love getting my KC startup information from Silicon Prairie News.  I love my android.
+          I love mixing things I love.</p>
+        <a href="https://play.google.com/store/apps/details?id=co.jmoses.spn">I'm listening... &rarr;</a>
+      </div>
+
+    </aside>
+
+    <!-- End Sidebar -->
+  </div>
+
+  <!-- End Main Content and Sidebar -->
+
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="large-12 columns">      
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{site.url}}{{page.url}}" data-via="mr_john_moses" data-size="large">Tweet</a>
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="https://twitter.com/mr_john_moses" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mr_john_moses</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
-</div>
-<script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E    %3C/script%3E"));
-</script>
-<script type="text/javascript">
-  try {
-    var pageTracker = _gat._getTracker("UA-42023893-1");
-    pageTracker._trackPageview();
-  } catch(err) {}
+
+  <script>
+    $(document).foundation();
   </script>
-  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E    %3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-42023893-1");
+      pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
+
+  <script>
+  !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+  <!-- End Footer -->
+</body>
 </html>

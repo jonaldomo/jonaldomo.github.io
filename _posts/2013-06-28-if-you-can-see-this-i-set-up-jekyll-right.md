@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: posts
 title: If you are reading this, I set up Jekyll right
 author: John Moses
 ---

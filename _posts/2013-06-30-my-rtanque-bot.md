@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: posts
 title: My RTanque bot
 author: John Moses
 ---
