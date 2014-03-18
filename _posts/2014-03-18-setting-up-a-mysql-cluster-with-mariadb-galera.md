@@ -98,9 +98,11 @@ CREATE DATABASE playground;
 CREATE TABLE playground.equipment ( id INT NOT NULL AUTO_INCREMENT, type VARCHAR(50), quant INT, color VARCHAR(25), PRIMARY KEY(id));
 INSERT INTO playground.equipment (type, quant, color) VALUES ("slide", 2, "blue");
 SELECT * FROM playground.equipment;
-``` 
+```
+ 
 ####Load balancing
+
 Once everything is setup, you will need to distribute the workload to each server in the cluster.  A common setup is to use HAProxy.  I used a network VIP, but here are a few resources to lookover that go into detail in how to setup HAProxy.
-[MariaDB Galera Cluster with HA Proxy and Keepalived on Centos 6](http://www.thenoccave.com/2013/12/30/mariadb-galera-cluster-ha-proxy-keepalived-centos-6/)
-[Avoiding Deadlocks in Galera - Set up HAProxy for single-node writes and multi-node reads](http://www.severalnines.com/blog/avoiding-deadlocks-galera-set-haproxy-single-node-writes-and-multi-node-reads)
-[http://blog.secaserver.com/2012/02/high-availability-mysql-cluster-galera-haproxy/](http://blog.secaserver.com/2012/02/high-availability-mysql-cluster-galera-haproxy/)
+*  [MariaDB Galera Cluster with HA Proxy and Keepalived on Centos 6](http://www.thenoccave.com/2013/12/30/mariadb-galera-cluster-ha-proxy-keepalived-centos-6/)
+*  [Avoiding Deadlocks in Galera - Set up HAProxy for single-node writes and multi-node reads](http://www.severalnines.com/blog/avoiding-deadlocks-galera-set-haproxy-single-node-writes-and-multi-node-reads)
+*  [High Availability: MySQL Cluster with Galera + HAProxy](http://blog.secaserver.com/2012/02/high-availability-mysql-cluster-galera-haproxy/)
