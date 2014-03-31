@@ -1,12 +1,14 @@
 ---
 layout: posts
-title: Tech Talk Notes: Application Security - Understanding, Exploiting and Defending against Top Web Vulnerabilities
+title: Tech Talk Notes on Top Web Vulnerabilities
 author: John Moses
 ---
 
 ###Tech Talk Notes: Understanding, Exploiting and Defending against Top Web Vulnerabilities
 
 I had the opportunity to listen to Michael Coates who is the Chairman of the Open Web Application Security Project OWASP, these are my notes.
+
+<img src="{{ site.url }}/images/2014-03-31-web-vulnerabilities.png" style="float: right;" />
 
 ####What OWASP does
 From their [wikipedia page ](https://www.owasp.org/index.php/Main_Page)
