@@ -8,8 +8,6 @@ author: John Moses
 
 I had the opportunity to listen to Michael Coates who is the Chairman of the Open Web Application Security Project OWASP, these are my notes.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/sY7pUJU8a7U" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
 ####What OWASP does
 From their [wikipedia page ](https://www.owasp.org/index.php/Main_Page)
 > The Open Web Application Security Project (OWASP) is a 501(c)(3) worldwide not-for-profit charitable organization focused on improving the security of software. Our mission is to make software security visible, so that individuals and organizations worldwide can make informed decisions about true software security risks.
