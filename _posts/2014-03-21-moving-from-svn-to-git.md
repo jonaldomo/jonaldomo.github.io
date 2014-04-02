@@ -43,10 +43,13 @@ Matching authors.txt file:
 `NDOGG = Nate Dogg <nate.dogg@arecordcompany.com>`  
 
 Second, create a directory to store your new repo.
-`md project && cd project`
+`mkdir project && cd project`
+
+Create a new git repo
+`git init`
 
 Then checkout the project from subversion, passing --no-metadata is actually recommended against but it worked for me so I am posting it here.
-`git svn http://svn.com/proj --no-metadata`
+`git svn init http://svn.com/proj --no-metadata`
 
 Pass your new authors file to match up users, if done properly your Github user account will now show your contributions  
 `git config svn.authorsfile ~/authors.txt`
