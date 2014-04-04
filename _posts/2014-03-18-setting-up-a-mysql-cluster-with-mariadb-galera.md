@@ -34,9 +34,11 @@ The stable generally available release is 5.5.  The development version is 10.0,
 After completing installation, I tried to start the server but ran into a syntax error in the init.d script [MDEV-5759](https://mariadb.atlassian.net/browse/MDEV-5759).  So I stuck with the stable release.
 
 ####Installation on Red Hat with yum
+
 ######1. Adding MariaDB yum repo
 MariaDB has built a [repository generator](https://downloads.mariadb.org/mariadb/repositories/#mirror=osuosl) that you can use to tell your package manager where to find the installation files.  For RHEL6 64bit the generator gave me the following, for which I copied into /etc/yum.repos.d/MariaDB.repo
-```
+
+{% highlight bash linenos %}
 # MariaDB 5.5 RedHat repository list - created 2014-03-18 19:06 UTC
 # http://mariadb.org/mariadb/repositories/
 [mariadb]
@@ -44,16 +46,18 @@ name = MariaDB
 baseurl = http://yum.mariadb.org/5.5/rhel6-amd64
 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1
-```
+{% endhighlight %}
 
 ######2. Installing MariaDB server, client and Galera with yum
-`sudo yum install MariaDB-Galera-server MariaDB-client galera`
-######3. Configuring Galera
-Once installation is complete, you will need to configure Galera by updating your Mysql configuration.  I updated /etc/my.cnf.d/server.conf with the following.  The important things you need to know are the IPs and names of each node in your cluster and the location of the libgalera_smm.so file.  
-`find / -name libgalera_smm.so`
+{% highlight bash linenos%} sudo yum install MariaDB-Galera-server MariaDB-client galera {% endhighlight %}
 
-will do the trick.
-```
+######3. Configuring Galera
+Once installation is complete, you will need to configure Galera by updating your Mysql configuration.  Find the location of the libgalera_smm.so file with the following command.
+{% highlight bash linenos%} find / -name libgalera_smm.so {% endhighlight %}
+
+Then update your mysql conf file with the following. Mine was found at /etc/my.cnf.d/server.conf.
+
+{% highlight bash linenos %}
 [mysqld]
 # 1. Mandatory settings: these settings are REQUIRED for proper cluster operation
 query_cache_size=0
@@ -83,7 +87,8 @@ wsrep_sst_auth=root:rootpa$$
 wsrep_node_incoming_address='192.168.10.2'
 wsrep_sst_donor='node3'
 wsrep_slave_threads=16
-```
+{% endhighlight %}
+
 ######4. Starting MariaDB
 The first node of your cluster will need to be started with the command `sudo service mysql start --wsrep-new-cluster`.
 All other nodes can be started with `sudo service mysql start`.
@@ -91,18 +96,26 @@ All other nodes can be started with `sudo service mysql start`.
 By default on RHEL6 the logging is directed to /var/lib/mysql/host-name-goes-here.err
 
 The first time I ran start the output just kept concatenating with a ... and never started.  The logfile indicated something about InnoDB storage engine, removing the ib files with `rm -f ib*` did the trick since.
+
 ####Testing
 Here are some statements you can run to see the replication in action that I grabbed from a [DigitalOcean tutorial](https://www.digitalocean.com/community/articles/how-to-configure-a-galera-cluster-with-mariadb-on-ubuntu-12-04-servers) I followed:
-```
+{% highlight sql linenos %}
 CREATE DATABASE playground;
-CREATE TABLE playground.equipment ( id INT NOT NULL AUTO_INCREMENT, type VARCHAR(50), quant INT, color VARCHAR(25), PRIMARY KEY(id));
-INSERT INTO playground.equipment (type, quant, color) VALUES ("slide", 2, "blue");
+CREATE TABLE playground.equipment ( 
+    id INT NOT NULL AUTO_INCREMENT
+  , type VARCHAR(50)
+  , quant INT
+  , color VARCHAR(25)
+  , PRIMARY KEY(id));
+INSERT INTO playground.equipment (type, quant, color)
+  VALUES ("slide", 2, "blue");
 SELECT * FROM playground.equipment;
-```
+{% endhighlight %}
  
 ####Load balancing
 
 Once everything is setup, you will need to distribute the workload to each server in the cluster.  A common setup is to use HAProxy.  I used a network VIP, but here are a few resources to lookover that go into detail in how to setup HAProxy.
+
 *  [MariaDB Galera Cluster with HA Proxy and Keepalived on Centos 6](http://www.thenoccave.com/2013/12/30/mariadb-galera-cluster-ha-proxy-keepalived-centos-6/)
 *  [Avoiding Deadlocks in Galera - Set up HAProxy for single-node writes and multi-node reads](http://www.severalnines.com/blog/avoiding-deadlocks-galera-set-haproxy-single-node-writes-and-multi-node-reads)
 *  [High Availability: MySQL Cluster with Galera + HAProxy](http://blog.secaserver.com/2012/02/high-availability-mysql-cluster-galera-haproxy/)

@@ -29,7 +29,7 @@ gem executable can give us a list of each gem by running `gem list
 --remote`.  Fortunately, each gem has its own homepage with a 
 nice URL.  e.g. Rails can be found at http://rubygems.org/gems/rails
 
-{% highlight js %}
+{% highlight javascript linenos %}
 var request = require('request'),
     cheerio = require('cheerio'),
     bytes = require('bytes'),
@@ -110,7 +110,7 @@ date on the x-axis.  So I need two columns, the first with release date
 and the second with the number of releases on that day.  The following 
 nodejs takes the dumped csv and puts in the format I want.
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 var __ = require('lodash'),
     moment = require('moment'),
     csv = require('csv'),
@@ -159,7 +159,7 @@ That is not going to work as I have ~65k so I boot up R.  The following
 two lines of R produce the line chart I want to see and remind me why 
 I like to use R.
 
-{% highlight r %}
+{% highlight r linenos %}
 data<-read.csv('releasedate.csv')
 plot(zoo(data$Released,as.Date(data$Date,"%m/%d/%y")),xlab="Release Date",ylab="Releases",main="RubyGems Release Date Trend")
 {% endhighlight %} 
