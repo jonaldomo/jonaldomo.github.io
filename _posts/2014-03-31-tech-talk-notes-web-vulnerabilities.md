@@ -19,6 +19,7 @@ Systems are being compromised all the time and it is a costly affair.  In 2013, 
 Michael walks through how to setup a virtual testing environment and how it works using a proxy server to see the next three attacks in action.
 
 The attacks he goes over in detail:
+
 #####Cross Site Scripting
 Injecting javascript and/or HTML to get full control of the page, redirect to a malicious site or hijack user sessions.
 

@@ -12,6 +12,7 @@ Subversion was the first revision control system I learned and used both profess
 What really motivates me to switch is the ability to use multiple remote origins (think servers with Subversion).  Not to mention that finding a free remote origin like Github or Bitbucket is relatively easy.  And with Atlassian tools like Jira, commit hooks are super easy and do not require complex configuration (subversion with bugzilla anybody?)
 
 Other people have problems too (see below list).  My personal favorite is file locks.  Yuck.  
+
 ######Merging problems
 *  [What Mother never told you about SVN Branching and Merging](http://designbygravity.wordpress.com/2009/10/19/what-mother-never-told-you-about-svn-branching-and-merging/)
 *  [It's Time to Fix Subversion Merge](http://blog.assembla.com/assemblablog/tabid/12618/bid/58122/It-s-Time-to-Fix-Subversion-Merge.aspx)
