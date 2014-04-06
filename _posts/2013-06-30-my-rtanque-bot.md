@@ -2,10 +2,11 @@
 layout: posts
 title: My RTanque bot
 author: John Moses
+tags: [ruby, rtanque]
 ---
-### RTanque
 [KCRuby](http://www.meetup.com/kcruby/) is running a RTanque contest right now.  I heard about this when [Wes Garrison](https://twitter.com/wesgarrison/) gave a presentation on Ruby at Cerner's internal tech conference and gave a plug to KCRuby.
 
+### RTanque
 [RTanque](https://github.com/awilliams/RTanque) is a tank game where you create your own tank (a bot) and target and shoot other tanks.  It is based on [Robotwar](http://corewar.co.uk/robotwar/) that is back from the 1970s.  The underlying framework for RTanque is written in Ruby and uses the [Gosu library](http://www.libgosu.org/) , a 2d game platform that is available for IOS and soon Android.  Your bots are written in Ruby and look like this:
 
 {% highlight ruby linenos %}

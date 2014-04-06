@@ -4,11 +4,12 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8" />
+  <meta name="description" content="{{ page.excerpt }}" />
 
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>I, Developer | Blog</title>
+  <title>{{ page.title }}</title>
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.2.3/css/normalize.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.2.3/css/foundation.min.css">
@@ -34,7 +35,7 @@
          <li><a href="http://jmoses.co/atom.xml" class="button">RSS</a></li>
         </ul>
       </div>
-      <h1>I, Developer</small></h1>
+      <h1><a href="{{ site.url }}">I, Developer</a></h1>
       <hr />
     </div>
   </div>
@@ -49,6 +50,11 @@
     <!-- Main Blog Content -->
     <div class="large-9 columns" role="content">
       <h2>{{ page.title }}</h2>
+      <ul class="inline-list">
+        {% for tag in page.tags %}
+        <li class="button tiny success disabled">{{ tag }}</li>
+        {% endfor %}
+      </ul>
       <h6>Written by <a href="http://jmoses.co">{{ page.author }}</a> on {{ page.date | date: "%B %-d, %Y"}}</h6>
       {{content}}
     </div>
@@ -59,17 +65,18 @@
     <!-- Sidebar -->
 
     <aside class="large-3 columns">
+      
 
-      <!--<h5>Categories</h5>
-      <ul class="side-nav">
-        <li><a href="#">News</a></li>
-        <li><a href="#">Code</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Fun</a></li>
-        <li><a href="#">Weasels</a></li>
-      </ul>-->
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{site.url}}{{page.url}}" data-via="mr_john_moses" data-size="large">Tweet</a>
+      
+      <br><br>
+
+      <a href="https://twitter.com/mr_john_moses" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mr_john_moses</a>
+      
+      <hr>
 
       <div class="panel">
+        
         <h5>My Latest App</h5>
         <img src="http://jmoses.co/images/spn_half.png"/>
         <br><br>
@@ -89,16 +96,13 @@
   <!-- Footer -->
 
   <footer class="row">
-    <div class="large-12 columns">      
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{site.url}}{{page.url}}" data-via="mr_john_moses" data-size="large">Tweet</a>
-      <hr />
+    <div class="large-12 columns">
       <div class="row">
         <div class="large-6 columns">
           <p>&copy; Copyright no one at all. Go to town.</p>
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right">
-            <li><a href="https://twitter.com/mr_john_moses" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @mr_john_moses</a></li>
           </ul>
         </div>
       </div>

@@ -2,11 +2,12 @@
 layout: posts
 title: 7 Open Source Contributions in 7 Days
 author: John Moses
+tags: [open source, chrome]
 ---
 
-### Open Source Aspirations
 Today I am committing myself to contribute to seven different open source projects over the next seven days.
 
+### Open Source Aspirations
 I have always been enamored by open source projects and how people can dedicate time and energy to them outside of their day to day jobs.  I tried to give it a go a few years ago with java projects over at Apache, but ultimately gave up as I felt over my head.  Which looking back on it, I feel anybody would be in over their head trying to jump into an Apache project.  One of the most popular projects Apache HTTP server has 2,267,859 lines of code.  Experience has taught me that starting small with a new code base increases the chances of developer success.
 
 ### Google Chrome Plugins

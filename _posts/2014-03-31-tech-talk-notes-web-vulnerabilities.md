@@ -2,11 +2,12 @@
 layout: posts
 title: Tech Talk Notes on Top Web Vulnerabilities
 author: John Moses
+tags: [owasp, security]
 ---
 
-<a href="https://www.youtube.com/watch?v=sY7pUJU8a7U" target="_blank"><img src="{{ site.url }}/images/2014-03-31-web-vulnerabilities.png" border="0"/></a>
-
 I had the opportunity to listen to Michael Coates who is the Chairman of the Open Web Application Security Project OWASP, these are my notes.
+
+<a href="https://www.youtube.com/watch?v=sY7pUJU8a7U" target="_blank"><img src="{{ site.url }}/images/2014-03-31-web-vulnerabilities.png" border="0"/></a>
 
 ####What OWASP does
 From their [wikipedia page ](https://www.owasp.org/index.php/Main_Page)

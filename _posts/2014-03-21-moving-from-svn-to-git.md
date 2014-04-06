@@ -2,9 +2,12 @@
 layout: posts
 title: Moving from Subversion to Git
 author: John Moses
+tags: [subversion, git, svn, repo]
 ---
-#### Goodbye old friend
+
 Subversion was the first revision control system I learned and used both professionally and personally.  Using it professionally was easy, as the server was already setup.  On a personal basis it was more work as you had to setup a server.  That problem was solved by distributed revision control systems like git, mercurial and bazaar.  I think using any revision control systems puts you in the lead anyway.  But being able to setup a repo by just typing `git init` and not have to configure a server is cool.  
+
+#### Goodbye old friend
 
 What really motivates me to switch is the ability to use multiple remote origins (think servers with Subversion).  Not to mention that finding a free remote origin like Github or Bitbucket is relatively easy.  And with Atlassian tools like Jira, commit hooks are super easy and do not require complex configuration (subversion with bugzilla anybody?)
 

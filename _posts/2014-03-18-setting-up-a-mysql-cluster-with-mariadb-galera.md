@@ -2,8 +2,9 @@
 layout: posts
 title: Setting up a Mysql cluster with MariaDB Galera
 author: John Moses
+tags: [mysql, mariadb]
 ---
-####The problem
+
 One of the applications I help develop and support uses Mysql as its database.  As the application starts to scale we notice the server with Mysql installed begans to have high CPU and memory utilization and sometimes feels like it is slowing down.  To be able to scale the database needs to be able to handle more reads and writes.  To do that I have chosen to setup MariaDB Galera, a synchronous multi-master cluster for MariaDB.
 
 <img src="//i.imgur.com/paXaVaK.gif">

@@ -2,9 +2,8 @@
 layout: posts
 title: Is Ruby Dying?
 author: John Moses
+tags: [programming, ruby, nodejs, r]
 ---
-
-### Is Ruby Dying?
 
 I have been working with nodejs alot lately and have been 
 discussing with coworkers if nodejs is taking steam away from 
