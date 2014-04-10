@@ -5,7 +5,7 @@ author: John Moses
 tags: [atom, textmate, sublime text, ide, editor]
 ---
 
-Github has released a new text editor this past month called [Atom](https://atom.io/)  I finally received an invite and it is time to put it to the test.
+Github has released a new text editor this past month called Atom.  I finally received an invite and it is time to put it to the test against Sublime and Textmate.
 
 As of the date of this post I am using TextMate.  But in the past I have used Sublime Text and have recently started trying out Github's Atom.
 
