@@ -3,6 +3,8 @@ layout: posts
 title: I made a SiliconPrairieNews.com Android App
 author: John Moses
 tags: [project, android, silicon prairie]
+categories: [blog]
+permalink: /2013/06/29/i-made-a-siliconprairienews-android-app.html
 ---
 I am addicted to reading about technology and learning what technologies 
 others are having success at.  As of this writing HackerNews is where it 

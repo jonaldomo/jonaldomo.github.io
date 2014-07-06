@@ -3,6 +3,8 @@ layout: posts
 title: Goodbye Bootstrap, Hello Zurb!
 author: John Moses
 tags: [zurb foundation]
+categories: [blog]
+permalink: /2013/08/08/goodbye-bootstrap-hello-zurb.html
 ---
 I have started switching over to [Zurb](http://foundation.zurb.com/) for new projects.  
 

@@ -3,6 +3,8 @@ layout: posts
 title: Automating test cases with model driven development
 author: John Moses
 tags: [testing, model driven development, automation]
+categories: [blog]
+permalink: /2014/06/02/automating-test-cases-model-driven-development.html
 ---
 
 I watched Bob Binder present on 'Model Driven Development - Taking BDD/ATDD to the Next Level' recorded at Cerner Corporation and was blown away when I saw him automate every single test case.  

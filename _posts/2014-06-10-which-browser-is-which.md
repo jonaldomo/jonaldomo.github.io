@@ -3,6 +3,8 @@ layout: posts
 title: Can you tell which browser is which?
 author: John Moses
 tags: [internet browsers, chrome, opera, firefox]
+categories: [blog]
+permalink: /2014/06/10/which-browser-is-which.html
 ---
 
 I switch between Chrome and Firefox routinely on my Mac whenever something irks me about one particular browser.  They look so similar that the only way I can tell the difference is by looking at the status bar at the application name.  Today I saw a screenshot of Opera and was blown away at how similar all three are.

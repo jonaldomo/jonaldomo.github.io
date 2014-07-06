@@ -3,6 +3,8 @@ layout: posts
 title: Monte Carlo and the Bomb
 author: John Moses
 tags: [statistics, monte carlo, history]
+categories: [blog]
+permalink: /2014/05/27/monte-carlo-and-the-bomb.html
 ---
 
 The Manhattan Project was a research and development project that produced the first atomic bombs during World War II.  Two of the mathematicians on the project were John von Neumann and Stanislaw Ulam.

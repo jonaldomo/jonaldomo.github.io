@@ -3,6 +3,8 @@ layout: posts
 title: The tale of three text editors - Atom, Sublime & Textmate
 author: John Moses
 tags: [atom, textmate, sublime text, ide, editor]
+categories: [blog]
+permalink: /2014/04/10/tale-of-three-editors.html
 ---
 
 Github has released a new text editor this past month called Atom.  I finally received an invite and it is time to put it to the test against Sublime and Textmate.

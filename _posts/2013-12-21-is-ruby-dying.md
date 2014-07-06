@@ -3,6 +3,8 @@ layout: posts
 title: Is Ruby Dying?
 author: John Moses
 tags: [programming, ruby, nodejs, r]
+categories: [blog]
+permalink: /2013/12/21/is-ruby-dying.html
 ---
 
 I have been working with nodejs alot lately and have been 

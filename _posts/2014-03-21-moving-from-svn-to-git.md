@@ -3,6 +3,8 @@ layout: posts
 title: Moving from Subversion to Git
 author: John Moses
 tags: [subversion, git, svn, repo]
+categories: [blog]
+permalink: /2014/03/21/moving-from-svn-to-git.html
 ---
 
 Subversion was the first revision control system I learned and used both professionally and personally.  Using it professionally was easy, as the server was already setup.  On a personal basis it was more work as you had to setup a server.  That problem was solved by distributed revision control systems like git, mercurial and bazaar.  I think using any revision control systems puts you in the lead anyway.  But being able to setup a repo by just typing `git init` and not have to configure a server is cool.  

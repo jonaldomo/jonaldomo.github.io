@@ -3,6 +3,8 @@ layout: posts
 title: 7 Open Source Contributions in 7 Days
 author: John Moses
 tags: [open source, chrome]
+categories: [blog]
+permalink: /2014/03/11/7-open-source-contributions-in-7-days.html
 ---
 
 Today I am committing myself to contribute to seven different open source projects over the next seven days.

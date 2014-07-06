@@ -3,6 +3,8 @@ layout: posts
 title: Tech Talk Notes on Top Web Vulnerabilities
 author: John Moses
 tags: [owasp, security]
+categories: [blog]
+permalink: /2014/03/31/tech-talk-notes-web-vulnerabilities.html
 ---
 
 I had the opportunity to listen to Michael Coates who is the Chairman of the Open Web Application Security Project OWASP, these are my notes.

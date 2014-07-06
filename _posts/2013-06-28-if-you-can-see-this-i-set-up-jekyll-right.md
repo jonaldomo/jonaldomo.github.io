@@ -3,6 +3,8 @@ layout: posts
 title: If you are reading this, I set up Jekyll right
 author: John Moses
 tags: [jekyll, blog]
+categories: [blog]
+permalink: /2013/06/28/if-you-can-see-this-i-set-up-jekyll-right.html
 ---
 I am glad I talked myself into setting up Jekyll.  With Jekyll I am able to write a blog 
 post with vi...
