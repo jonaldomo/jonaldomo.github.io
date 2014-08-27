@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: projects
 title: ExtJS Event Management Front End
 author: John Moses
 tags: [extjs, ajax, javascript, mvc, widgets, grails]

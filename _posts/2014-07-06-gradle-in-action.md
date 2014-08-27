@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: projects
 title: Gradle In Action
 author: John Moses
 tags: [gradle, maven, book]
