@@ -6,7 +6,7 @@ tags: [education, tech talk]
 categories: [blog]
 permalink: /2014/09/12/lessons_learned_teaching_software_development.html
 ---
-I wanted to watch a tech talk from Pycon 2014 that happened in April of 2014.  I scanned the topics to find one that was a little more advanced than an 'Intro to Django' and something that could hold my attention in the middle of a Friday.  I found one called Sofware Carpentry: Lessons Learned by Greg Wilson.
+I wanted to watch a tech talk from Pycon 2014 that happened in April of 2014.  I scanned the topics to find one that was a little more advanced than an 'Intro to Django' and something that could hold my attention in the middle of a Friday.  I found one called [Sofware Carpentry: Lessons Learned](https://www.youtube.com/watch?v=FtKO619O5g0) by Greg Wilson.
 
 I googled each presentor before watching and found that Greg was the author of a book I really enjoy called Beautiful Code.  Think of Beautiful Code in the same genre as Pragmatic Programmer, Clean Code and Code Complete.
 
