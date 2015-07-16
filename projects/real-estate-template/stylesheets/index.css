@@ -10,7 +10,7 @@
 
 }
 body {
-  padding-top: 120px;
+  padding-top: 50px;
 }
 .starter-template {
   padding: 40px 15px;
@@ -21,6 +21,9 @@ body {
 }
 .down-50 {
   margin-top: 50px;
+}
+.down-100 {
+  margin-top: 100px;
 }
 .left-75 {
   margin-left: 75px;
@@ -39,7 +42,6 @@ body {
   color: black;
 }
 #subheader-top {
-  top: -70px;
   margin-bottom: -70px;
   background-color: #eeeeee;
 }
