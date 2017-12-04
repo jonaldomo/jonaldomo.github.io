@@ -7,10 +7,6 @@ categories: [blog]
 permalink: /2017/12/03/building-ach-file-with-ruby.html
 ---
 
-## Building an ACH file with ruby
-
-### What are ACH files?
-
 ACH files are used to transfer money between a "batch" of checking accounts to one checking account.  Gusto did a good set of blog posts to describe ACH files from a developer's perspective in detail if you want to understand some of the nitty gritty.
 
 http://engineering.gusto.com/how-ach-works-a-developer-perspective-part-1/
