@@ -103,7 +103,7 @@ end
 
 You can generate output to file or to a string.  The underlying library to handle the output is fixy https://github.com/Chetane/fixy which is used for fixed width documents
 
-{% highlight ruby linenos %}
+```
 101 123456789111111112 1712031344A094101US BANK                MY COMPANY             12032017
 5220MY COMPANY                          111111112 PPDMY COMPANY171203171203   1123456780000001
 6222104217478003341838       00000049991              JOHN                    01203201713440  
@@ -114,7 +114,7 @@ You can generate output to file or to a string.  The underlying library to handl
 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
-{% endhighlight %}
+```
 
 Now that I have an output I can upload it to my bank or if I can find a bank that allows me to post the file directly to it through an API I can.  I will have to find one, for now manual is fine.
 
