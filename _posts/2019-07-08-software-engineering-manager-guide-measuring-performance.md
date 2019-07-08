@@ -2,10 +2,12 @@
 layout: posts
 title: A software engineering manager guide to measuring a software engineers performance
 author: John Moses
-tags: [ruby, blog, banking, ach]
+tags: [ios, android, management, one on ones]
 categories: [blog]
 permalink: /2019/07/08/software-engineering-manager-guide-measuring-performance.html
 ---
+
+Be a better management with transparent performance reviews and quick feedback with on focus areas.  To effectively measure software engineers, a manager needs to ask why they are measuring, agree upon on what to measure and then land on how to measure.
 
 ### Why measure?
 
